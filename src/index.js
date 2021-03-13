@@ -1,10 +1,38 @@
-import "./styles.css";
+/**
+ * conts,letの変数宣言
+ */
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+//  var val1 = "var変数";
+//  console.log(val1);
+
+//  // var変数は上書き可能
+
+//  val1 = "var変数を上書き";
+//  console.log(val1);
+
+//  // var変数は再宣言可能
+//  var val1 = "var変数を再宣言";
+//  console.log(val1);
+
+// const val3 = "const変数";
+// console.log(val3);
+
+// const変数は上書き不可能
+// val3 = "const変数を上書き";
+// const val3 = "const変数を再宣言";
+
+// constで定義したオブジェクトでも、プロパティの変更は可能
+// const val4 = {
+//   name: "りく",
+//   age: 25,
+// };
+
+// val4.name = "しんじょう";
+// val4.adress = "Kanagawa";
+// console.log(val4);
+
+// constで定義した配列でも、プロパティの変更は可能
+const val5 = ["dog", "cat"];
+val5[0] = "bird";
+val5.push("monkey");
+console.log(val5);
